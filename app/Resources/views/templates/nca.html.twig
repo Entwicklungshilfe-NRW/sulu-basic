@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!--
+Support für unsere Open Source Projekte gesucht!!
+-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block meta %}
+        {% include "SuluWebsiteBundle:Extension:seo.html.twig" with {
+            "seo": extension.seo|default([]),
+            "content": content|default([]),
+            "urls": urls|default([]),
+            "shadowBaseLocale": shadowBaseLocale|default(),
+            "defaultLocale": request.defaultLocale|default('de')
+        } %}
+    {% endblock %}
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <!--[if IE 8]>
+    <link href="/ethic/style_ie8.css" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+    <!-- HTML5 Shim and Respond.js') }} IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js') }} doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="/ethic/js/html5shiv.js"></script>
+    <script src="/ethic/js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href='//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css' rel='stylesheet' type='text/css'>
+    <link href='//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+    <link href='/css/nca-contact.css' rel='stylesheet' type='text/css'>
+    <link href="/ethic/style.css" rel="stylesheet"/>
+</head>
+<body>
+{% block content %}
+
+    <div class="loading-page">
+        <img src="/img/never-code-alone-loader.gif" alt="Sponsoren und Teilnehmer">
+    </div>
+
+    <!-- Begin class tz-header -->
+    <header class="tz-header tz-header-2">
+        <div class="tz-customer-container">
+            <div class="container">
+                <div class="tz-header-content">
+                    <h3 class="tz-logo pull-left">
+                        <a href="/"><img alt="Never Code Alone Logo" src="/img/logo.png"></a>
+                    </h3>
+                    <button type="button" class="tz-button-toggle btn-navbar pull-right" data-target=".nav-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <nav class="nav-collapse pull-right">
+                        <ul class="tz-menu">
+                            <li>
+                                <a href="/accenture-interactive/">#NCAEvents</a>
+                                <ul class="sub-menu sub-menu-style-1">
+                                    <li>
+                                        <a href="/accenture-interactive/">06.04.19 Accenture Interactive</a>
+                                    </li>
+                                    <li>
+                                        <a href="/hall-of-fame/">17.11.18 Hall of Fame</a>
+                                    </li>
+                                    <li>
+                                        <a href="/otto/">29.09.18 OTTO</a>
+                                    </li>
+                                    <li>
+                                        <a href="/influencerdb/">03.03.18 Influencer DB</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://blog.nevercodealone.de/move-elevator-fuers-coden-zum-aquarium/" rel="noopener" target="_blank">23.09.17 move:elevator</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://blog.nevercodealone.de/sommer-sonne-coden/" rel="noopener" target="_blank">27.05.17 CHECK24</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://blog.nevercodealone.de/fun-coding-guter-zweck/" rel="noopener" target="_blank">04.03.17 PageGroup</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://blog.nevercodealone.de/never-code-alone-denkwerk-koeln/" rel="noopener" target="_blank">19.11.16 denkwerk</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://blog.nevercodealone.de/gelungener-start-fuer-duisburger-webdevelopment-projekt/" rel="noopener" target="_blank">20.08.16 wysiwyg</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="http://www.typo3campvenlo.nl/" target="_blank" rel="noopener">#NCAMeetups / UG</a>
+                                <ul class="sub-menu sub-menu-style-1">
+                                    <li>
+                                        <a href="http://www.typo3campvenlo.nl/" target="_blank" rel="noopener">14.03.19 TYPO3Camp Venlo</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.meetup.com/de-DE/phpughh/events/fpnmzmyzdbqb/" target="_blank" rel="noopener">12.02.19 PHPUG Hamburg</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.meetup.com/de-DE/CodeFellas/events/255602934/" target="_blank" rel="noopener">18.01.19 Code Fellas Leipzig</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.meetup.com/de-DE/PHP-USERGROUP-DRESDEN/events/246306877/" target="_blank" rel="noopener">17.12.18 PHPUG Dresden</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/employer-branding/" title="Employer Branding">Employer Branding</a>
+                            </li>
+                            <li>
+                                <a href="https://www.rolandgolla.de/" title="PHP Training" target="_blank" rel="noopener">PHP-Training</a>
+                            </li>
+                            <li>
+                                <a href="https://blog.nevercodealone.de/" target="_blank" rel="noopener">Blog Magazin</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div><!-- End Content Main Header -->
+        </div>
+    </header>
+
+    <section class="tz-student-life">
+        <div class="parallax-style-4">
+            <div class="tz-life-content">
+                <div class="tz-instruction">
+                    <img src="/ethic/img/nca-logo-30.png" alt="Images">
+                    <h4>“It’s harder to read code than to write it.”</h4>
+                    <strong>Joel Spolsky</strong>
+                </div>
+            </div>
+        </div><!-- End class parallax-home4 -->
+    </section><!-- End class tz-student-life-home-4 -->
+    <!-- Begin Footer -->
+    <footer class="tz-footer">
+        <div class="tz-footer-content tz-footer-content-2 tz-background-color-8">
+            <div class="container">
+                <img src="/img/rogoit-logo.png" alt="Rogoit Webdesign">
+                <ul class="tz-footer-part">
+                    <li>
+                        <div class="tz-footer-content-main">
+                            <img src="/ethic/images/check-footer-Home4.png" alt="ROLAND GOLLA">
+                            <h4>ROLAND GOLLA</h4>
+                            <ul>
+                                <li><a href="https://www.rolandgolla.de/" target="_blank" rel="noopener">PHP Freelancer</a></li>
+                                <li><a href="https://www.rolandgolla.de/php-kurs-inhouse-schulung/" target="_blank" rel="noopener">PHP-Kurs
+                                        Inhouse-Schulung</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tz-footer-content-main">
+                            <img src="/ethic/images/check-footer-Home4.png"
+                                 alt="Images remove footer">
+                            <h4>ENTWICKLUNGSHILFE NRW</h4>
+                            <ul>
+                                <li><a href="http://www.entwicklungshilfe.nrw/dozenten/" target="_blank" rel="noopener">Dozenten</a></li>
+                                <li><a href="http://www.entwicklungshilfe.nrw/workshops/soforthilfe/" target="_blank" rel="noopener">Soforthilfe</a>
+                                </li>
+                                <li><a href="http://www.entwicklungshilfe.nrw/code-rocker/" target="_blank" rel="noopener">Code-Rocker</a>
+                                </li>
+                                <li><a href="http://www.entwicklungshilfe.nrw/workshops/moderierte-code-reviews/"
+                                       target="_blank" rel="noopener">Code Reviews</a></li>
+                                <li><a href="http://www.entwicklungshilfe.nrw/workshops/moderiertes-pair-programming/"
+                                       target="_blank" rel="noopener">Pair Programming</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tz-footer-content-main">
+                            <img src="/ethic/images/check-footer-Home4.png"
+                                 alt="Images remove footer">
+                            <h4>WEBVISUM</h4>
+                            <ul>
+                                <li><a href="https://webvisum.de/schulungen.html" target="_blank" rel="noopener">Magento Support</a></li>
+                                <li><a href="https://webvisum.de/magento-hosting" target="_blank" rel="noopener">Hosting</a></li>
+                                <li><a href="https://webvisum.de/online-marketing" target="_blank" rel="noopener">Online Marketing</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tz-footer-content-main">
+                            <img src="/ethic/images/check-footer-Home4.png"
+                                 alt="Images remove footer">
+                            <h4>PARTNER WERDEN</h4>
+                            <ul>
+                                <li><a href="https://blog.nevercodealone.de/kontakt-nca/" target="_blank" rel="noopener">Sponsoring</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tz-footer-address-site">
+            <address>Never Code Alone, Mercatorstr. 120 47051 Duisburg, Deutschland | Telefon: <a href="tel:+4917624747727">+49
+                    (0)176 24 74 77 27</a></address>
+            <address>Never Code Alone gehört Rogoit Webdesign. Es gilt das <a href="/impressum/">Impressum</a>.
+            </address>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <script>
+        var Desktop = 5,
+            tabletportrait = 2,
+            mobilelandscape = 1,
+            mobileportrait = 1,
+            resizeTimer = null;
+    </script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="/ethic/js/off-canvas.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/1.5.25/jquery.isotope.js"></script>
+    <script src="/ethic/js/resize.js"></script>
+    <script src="/ethic/js/custom-portfolio.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax-min.js"></script>
+    <script src="/ethic/js/custom.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/nca-contact.js"></script>
+    {% endblock content %}
+</body>
+</html>
+
